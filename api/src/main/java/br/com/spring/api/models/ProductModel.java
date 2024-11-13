@@ -25,6 +25,14 @@ public class ProductModel extends RepresentationModel<ProductModel> implements S
     private String description;
     private int stock;
 
+    public ProductModel() {}
+    public ProductModel(UUID idProduct, String name, BigDecimal price, String description, int stock) {
+        this.idProduct = idProduct;
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.stock = stock;
+    }
     public static long getSerialversionuid() {
         return serialVersionUID;
     }
